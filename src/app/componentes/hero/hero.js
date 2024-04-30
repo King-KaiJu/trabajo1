@@ -1,7 +1,10 @@
-const Hero = (props) => {
-    const {heroText} = props;
+import styles from "./hero.module.css"
+
+const Hero = ({heroText}) => {
     return (
-        <h1 style={{backgroundImage: '/Cute Buubb.png' , padding: '5rem', margin: '3rem'}}>{heroText}</h1>
+        <div className={styles.heroBKG}>
+            <h1 className={styles.hero}>{heroText}</h1>
+        </div>
     )
 }
 

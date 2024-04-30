@@ -1,5 +1,4 @@
-const Footer = (props) =>{
-    const {barraMail, iconos} = props;
+const Footer = ({barraMail, iconos}) =>{
     return (
         <footer style={{backgroundColor: '#00f'}}>
             <section>

@@ -1,22 +1,14 @@
-import Image from "next/image";
+import styles from "./card.module.css"
 
-const Card = (props) => {
-    const {image, title, description} = props;
+const Card = ({image, title, description, alt, lar}) => {
     return(
-        <div style={{backgroundColor: 'red', padding: '2rem', margin: '1rem'}}>
-            <Image
-                src={image}
-                alt="Next.js Logo"
-                width={180}
-                height={37}
-                priority
-                />
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <button>Huebon</button>
-        </div>
+        <a href="/" >
+            <div className={styles.card} style={{backgroundImage:`url(${image})`}}>
+                <h3>{title}</h3>
+                <p>{description}</p>
+            </div>
+        </a>
     )
 }
 
 export default Card;
-

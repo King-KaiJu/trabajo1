@@ -1,10 +1,12 @@
+import styles from './navbar.module.css'
+
 const Navbar = (props) => {
     const {titulo, menu} = props;
     return(
-        <header style={{backgroundColor: 'cyan', padding: '2rem', margin: '1rem'}}>
-            <h1>{titulo}</h1>
+        <header className={styles.container}>
+            <h1><a href='/'>{titulo}</a></h1>
             <nav>
-                <ul>
+                <ul className={styles.menu} >
                     {
                     menu.map((item, index) => (
                     <li key={index}>
