@@ -1,9 +1,9 @@
 .textCard{
-    font-family: "Comic Sans MS", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .box {
-    padding: 4rem;
+    padding: 3rem 2rem;
     background-color: blueviolet;
     background-position: center;
     background-size: cover;

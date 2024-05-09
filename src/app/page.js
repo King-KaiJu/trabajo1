@@ -93,7 +93,12 @@ export default function Home() {
             <CardsGrid cards={cardsGrid} />
           </article>
         </section>
-        <Footer barraMail = {footerInfo.contacto} twitter={footerInfo.twitter} instagram={footerInfo.instagram} github = {footerInfo.github} />  
+        <Footer 
+        barraMail = {footerInfo.contacto} 
+        twitter={footerInfo.twitter} 
+        instagram={footerInfo.instagram} 
+        github = {footerInfo.github} 
+        />  
     </main>
   );
 };
