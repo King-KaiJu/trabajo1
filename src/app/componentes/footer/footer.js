@@ -1,10 +1,14 @@
-const Footer = ({barraMail, iconos}) =>{
+import styles from "./footer.module.css";
+
+const Footer = ({barraMail, twitter, instagram, github}) =>{
     return (
-        <footer style={{backgroundColor: '#00f'}}>
-            <section>
-                <h1>{iconos}</h1>
+        <footer className={styles.mierdaconpatas}>
+            <section className={styles.izquierda}>
+                <a href="https://twitter.com/?lang=es"><h2>{twitter}</h2></a>
+                <a href="https://www.instagram.com"><h2>{instagram}</h2></a>
+                <a href="https://github.com/King-KaiJu"><h2>{github}</h2></a>
             </section>
-            <section>
+            <section className={styles.derecha}>
                 <form>
                     <input type={barraMail}></input>
                 </form>

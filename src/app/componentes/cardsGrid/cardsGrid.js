@@ -13,6 +13,7 @@ const CardsGrid = ({cards}) => {
                     image={card.image} 
                     alt={card.alt}
                     lar={card.lar}
+                    txtColor={card.txtColor}
                     />
                 </article>
             ))}
