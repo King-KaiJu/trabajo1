@@ -30,7 +30,7 @@ export default function Home() {
     {
       title: 'Diujos en digital',
       description: 'Dibujos hechos con la tableta de dibujo',
-      image: '/images/CuteBuubb.png',
+      image: '/images/cutebuubb.png',
       alt: '20rem',
       lar: '25rem',
       marg: '0',
